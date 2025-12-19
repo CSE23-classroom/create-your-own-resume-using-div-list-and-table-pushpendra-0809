@@ -11,6 +11,7 @@ html, body{
     height: 100%;
     width: 100%;
     font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    position: relative;
 }
 .header{
     display: flex;
@@ -115,11 +116,6 @@ html, body{
     background-color: rgb(54, 56, 87);
     padding: 2px;
 }
-#text1 :hover{
-   
-    border: 1px solid white;
-}
-
 #menu{
     height: 100%;
     width: 4%;
@@ -152,4 +148,69 @@ html, body{
 }
 #nav_text{
     margin: 10px;
+}
+.container{
+ padding: 2rem;
+}
+.slider-wrapper{
+    position: relative;
+    max-width: 100%;
+    margin: 0 auto;
+}
+.slider{
+    display: flex;
+    height: 300px;
+    width: 100%;
+    /* It will prevent the images to leak out of the container */
+    overflow-x:auto ;
+    /* It will make the scrolling in x - direction only and smoothly */
+    scroll-snap-type: x mandatory;
+    scroll-behavior: smooth;
+    box-shadow: 0 1.5rem 3rem -0.75rem hsla(0, 0%, 0%, 0.25);
+    border-radius: 0.5rem;
+}
+.products{
+    height: 400px;
+    width: 1400px;
+}
+.product-box1{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin-left: 60px;
+    padding: 20px;
+}
+#product1{
+ margin-left: 10px;
+    height:100%;
+    width:380px ;
+    background-color: white;
+     box-shadow: 0 1.5rem 3rem -0.75rem hsla(0, 0%, 0%, 0.25);
+}
+
+#product2{
+   margin-left: 10px;
+     height:100%;
+    width:380px ;
+    background-color: white;
+    box-shadow: 0 1.5rem 3rem -0.75rem hsla(0, 0%, 0%, 0.25);
+}
+#product3{
+   margin-left: 10px;
+    height:100%;
+    width:380px ;
+    background-color: white;
+    box-shadow: 0 1.5rem 3rem -0.75rem hsla(0, 0%, 0%, 0.25);
+}
+.product-image{
+    margin-left: 35px;
+    height: 290px;
+    width: 300px;
+}
+#product-img{
+    height: 290px;
+    width: 300px;
 }
